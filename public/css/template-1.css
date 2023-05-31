@@ -1,0 +1,51 @@
+.page {
+  background: white;
+}
+.page-content {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.header {
+  padding: 24px;
+}
+
+.header-logo {
+  font-size: 30px;
+}
+.header-nav {
+}
+.divider {
+  margin: 0;
+  height: 1px;
+  background: gray;
+}
+
+.nav {
+  display: inline-flex;
+}
+
+.nav-link {
+  color: #343a40;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+.nav-vertical {
+  display: block;
+  margin-bottom: 12px;
+}
+.nav-inline {
+  margin-right: 24px;
+}
+.header-nav-right {
+  margin-left: auto;
+  width: fit-content;
+}
+.page-block:not(:last-of-type) {
+  margin-bottom: 80px;
+}

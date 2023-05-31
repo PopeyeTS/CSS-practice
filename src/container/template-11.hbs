@@ -1,0 +1,38 @@
+<div class="page">
+    <div class="block-margin">
+        <div class="header">
+            {{> logo}}
+            {{> nav2 list=header}}
+        </div>
+    </div>
+    {{> hero}}
+
+    <div class="main-block block-margin">
+        <main class="row g-0 plans">
+            {{#each plans}}
+            <div class="col plans-card">                
+                {{> card}}                
+            </div>
+            {{/each}}
+        </main>
+    </div>
+    <div class="block-margin">
+        {{> divider}}
+        <footer class="row footer">           
+            <div class="col-3">
+                {{> logo}}
+                <div class="copyright-2023">
+                    Copyright-2023
+                </div>
+            </div>
+            {{#each footer}}
+            <div class="col-3">
+                <span class="footer-title">{{title}}</span>
+                <div class="footer-list">
+                    {{> nav2 list=links isVertical=true}}
+                </div>
+            </div>
+            {{/each}}
+        </footer>
+    </div>    
+</div>
