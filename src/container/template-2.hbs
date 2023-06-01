@@ -1,0 +1,87 @@
+<div class="page">
+    <div class="block-margin">
+        <div class="header">
+            {{> logo}}
+            {{> nav2 list=header}}
+        </div>
+    </div>
+    <div class="hero block-margin">
+        {{> hero}}
+        <a class="button" href="{{hero.button.url}}">{{hero.button.text}}</a>
+    </div>
+
+
+    <div class="main-block block-margin">
+        <div class="row g-4">
+            {{#each preview}}
+            <div class="col-6">
+                {{> card-pre data=this}}
+            </div>
+            {{/each}}
+        </div>
+    </div>
+
+    <div class="main-block block-margin">
+        <main class="main">
+            <div class="row g-0">
+                <div class="col-12">
+                    <div class="list-header">
+                        <div class="row g-0">
+                            <div class="col-6">
+                                <h2 class="list-title">List of posts</h2>
+                            </div>
+                            <div class="col-6">
+                                <div class="cat-list">
+                                    {{#each categories}}
+                                    <button class="cat-button">{{text}}</button>
+                                    {{/each}}
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-7">
+                    <div class="list">
+                        {{#each news}}
+                        {{> card-post data=this}}
+                        {{/each}}
+                    </div>
+                </div>
+                <div class="col-5">
+                    <aside class="list-aside">
+                        <div class="about">
+                            <h4 class="about-title">About</h4>
+                            <p class="about-text">{{about}}</p>
+                        </div>
+                        {{> link-list data=archive title="archive"}}
+
+                        {{> link-list data=social title="social"}}
+                    </aside>
+                </div>
+            </div>
+        </main>
+
+    </div>
+    <div class="block-margin">
+        {{> divider}}
+        <footer class="row footer">
+            <div class="col-3">
+                {{> logo}}
+                <div class="copyright-2023">
+                    Copyright-2023
+                </div>
+            </div>
+            {{#each footer}}
+            <div class="col-3">
+                <span class="footer-title">{{title}}</span>
+                <div class="footer-list">
+                    {{> nav2 list=links isVertical=true}}
+                </div>
+            </div>
+            {{/each}}
+        </footer>
+    </div>
+</div>
+
+</div>
