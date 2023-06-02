@@ -27,6 +27,7 @@
   box-sizing: border-box;
 }
 .nav {
+  display: block;
   display: flex;
   flex-direction: row;
   gap: 24px;
@@ -36,6 +37,7 @@
   position: relative;
 }
 .nav-text {
+  display: block;
   color: #343a40;
   text-align: left;
   font: 400 16px 'Roboto', sans-serif;
