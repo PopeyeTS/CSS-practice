@@ -1,0 +1,296 @@
+<html>
+
+  <head>
+    <title>
+      Page dashboard
+    </title>
+    <meta charset='utf-8' />
+
+    <link href='css/normalize.css' rel='stylesheet' />
+    <link href='css/dashboard.css' rel='stylesheet' />
+    <meta
+      name='viewport'
+      content='viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'
+    />
+
+  </head>
+
+  <body>
+    <div class='page page--dash'>
+      <div class='page__aside aside'>
+        <div class='aside__logo'>
+          SIDEBAR
+        </div>
+        <nav class='aside__nav'>
+          <a
+            href='#'
+            class='nav-button nav-button--active click'
+          >
+            <span
+              class='icon nav-button__icon'
+              style='background-image: url(/svg/nav/home.svg)'
+            >
+            </span>
+            <span class='nav-button__text'>
+              Home
+            </span>
+
+          </a>
+          <a href='#' class='nav-button click'>
+            <span
+              class='icon nav-button__icon'
+              style='background-image: url(/svg/nav/orders.svg)'
+            >
+            </span>
+            <span class='nav-button__text'>
+              Orders
+            </span>
+
+          </a><a href='#' class='nav-button click'>
+            <span
+              class='icon nav-button__icon'
+              style='background-image: url(/svg/nav/products.svg)'
+            >
+            </span>
+            <span class='nav-button__text'>
+              Products
+            </span>
+
+          </a>
+
+          <div class='field__block click'>
+            <div class='field field--select'>
+              <span class='text text--light'>
+                Choose...
+              </span>
+              <select class='field__select'>
+                <option value='1'>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
+            </div>
+          </div>
+
+        </nav>
+      </div>
+      <header class='header'>
+        <div class='layout header__content'>
+          <div class='header__search'>
+            <input
+              type='text'
+              class='field field--header'
+              placeholder='Search'
+            />
+            <span
+              class='icon icon__header-search'
+              style='background-image: url(/svg/header/search.svg);'
+            ></span>
+            <span
+              class='icon icon__header-settings icon--color-blue icon--button click'
+              style='background-image: url(/svg/header/settings.svg);'
+            ></span>
+          </div>
+          <div class='header__menu'>
+
+            <span
+              class='icon header__menu-item header__menu-yellow click'
+              style='background-image: url(/svg/header/signal.svg);'
+            ></span>
+            <span
+              class='icon header__menu-item header__menu-blue click'
+              style='background-image: url(/svg/header/lang.svg);'
+            ></span>
+            <span
+              class='icon header__menu-item header__menu-yellow click'
+              style='background-image: url(/svg/header/bell.svg);'
+            ></span>
+          </div>
+
+        </div>
+
+      </header>
+      <main class='main'>
+        <div class='layout'>
+          <div class='box anal__block'>
+            <div class='anal anal--double anal--blue'>
+              <span
+                class='icon anal__button icon--color-blue icon--button click'
+                style='background-image: url(/svg/anal/order.svg);'
+              ></span>
+              <div class='anal__content'>
+                <div class='anal__title'>$961</div>
+                <div class='anal__text'>Total order</div>
+                <span
+                  class='icon anal__arrow'
+                  style='background-image: url(/svg/anal/arrow.svg);'
+                ></span>
+              </div>
+            </div>
+            <div class='anal anal--double anal--violet'>
+              <span
+                class='icon anal__button icon--color-violet icon--button click'
+                style='background-image: url(/svg/anal/money.svg);'
+              ></span>
+              <div class='anal__content'>
+                <div class='anal__title'>500.00</div>
+                <div class='anal__text'>Total earning</div>
+                <span
+                  class='icon anal__arrow'
+                  style='background-image: url(/svg/anal/arrow.svg);'
+                ></span>
+              </div>
+            </div>
+            <div class='anal anal--single anal--blue'>
+              <span
+                class='icon anal__button icon--color-blue icon--button click'
+                style='background-image: url(/svg/anal/money.svg);'
+              ></span>
+              <div class='anal__content'>
+                <div class='anal__title-small'>$203k</div>
+                <div class='anal__text'>Total earning</div>
+              </div>
+            </div>
+            <div class='anal anal--single anal--empty'>
+              <span
+                class='icon anal__button icon--color-yellow icon--button click'
+                style='background-image: url(/svg/anal/shop.svg);'
+              ></span>
+              <div class='anal__content'>
+                <div
+                  class='anal__title-small text--dark'
+                >$203k</div>
+                <div class='anal__text text--dark'>Total
+                  earning</div>
+              </div>
+            </div>
+          </div>
+          <div class='frame'>
+            <div class='box vertical24'>
+              <div class='text-heading'>purchase list</div>
+              <hr class='divider' />
+
+              <div class='order vertical12'>
+                <div class='text'>ID437661</div>
+                <div class='text'>AirOn ProCam</div>
+                <div class='text'>132.32 EUR</div>
+                <div class='text'>Customer</div>
+                <div class='text'>May 11, 2023, 14:21</div>
+                <div class='text'>7/8 USB Type-C</div>
+                <div class='text text--warning'>Not paid</div>
+                <div class='text'>robin@com.de</div>
+              </div>
+              <hr class='divider' />
+              <div class='order vertical12'>
+                <div class='text'>ID437661</div>
+                <div class='text'>PHILIPS Essential</div>
+                <div class='text'>543 USD</div>
+                <div class='text'>Customer</div>
+                <div class='text'>May 11, 2023, 14:21</div>
+                <div class='text'>HD9200/90</div>
+                <div class='text text--sucsess'>Pay by
+                  Stripe</div>
+                <div class='text'>dima@com.ua</div>
+              </div>
+
+            </div>
+            <div class='box vertical24'>
+              <div class='text-heading'>Payments</div>
+              <hr class='divider' />
+              <div class='checkbox text vertical12'>
+                <label><input name='origin' type='radio' />
+                  Credit card</label>
+                <label><input name='origin' type='radio' />
+                  Debit card</label>
+                <label><input name='origin' type='radio' />
+                  PayPal</label>
+              </div>
+              <div class='card_info vertical24'>
+                <div class='vertical8'>
+                  <label class='text'>Name on card</label>
+                  <input
+                    type='text'
+                    class='field'
+                    placeholder='Name on card'
+                  />
+                </div>
+                <div class='vertical8'>
+                  <label class='text'>Credit card number</label>
+                  <input
+                    type='text'
+                    class='field'
+                    placeholder='Credit card number'
+                  />
+                </div>
+                <div class='vertical8'>
+                  <label class='text'>Expiration</label>
+                  <input
+                    type='text'
+                    class='field'
+                    placeholder='Expiration'
+                  />
+                </div>
+                <div class='vertical8'>
+                  <label class='text'>CVV</label>
+                  <input
+                    type='text'
+                    class='field'
+                    placeholder='CVV'
+                  />
+                </div>
+
+              </div>
+
+              <hr class='divider' />
+              <div class='adress vertical24'>
+                <div class='field__block click vertical8'>
+                  <label
+                    class='text'
+                    for='country'
+                  >Country</label>
+                  <div class='field field--select'>
+                    <span class='text'>
+                      Choose...
+                    </span>
+                    <select class='field__select'>
+                      <option value='1'>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                    </select>
+                  </div>
+                </div>
+                <div class='field__block click vertical8'>
+                  <label
+                    class='text'
+                    for='country'
+                  >State</label>
+                  <div class='field field--select'>
+                    <span class='text'>
+                      Choose...
+                    </span>
+                    <select class='field__select'>
+                      <option value='1'>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <hr class='divider' />
+              <a
+                class='checkout-button text text--light click'
+              >Continue to checkout</a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </main>
+    </div>
+
+  </body>
+</html>
